@@ -1,0 +1,4 @@
+#organism       #division       #name   #tree   #NCBI-taxid
+art	ART	Artificial homolog	Metazoa;Artificial;homolog;	1337
+tca	TCA	Tribolium castaneum	Metazoa;Bilateria;Ecdysozoa;Arthropoda;Hexapoda;	7070
+aca	ACA	Anolis carolinensis	Metazoa;Bilateria;Deuterostoma;Chordata;Vertebrata;Sauria;	28377
