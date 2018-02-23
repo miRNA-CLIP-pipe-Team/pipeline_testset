@@ -1,4 +1,4 @@
-# gffread -r NC_007416.3:350000..6000000 NC_007416.3_reduced_TCA_genome.gff -R -O -F -E -o -
+# gffread -r NC_007416.3:350000..6000000 NC_007416.3_reduced_TCA_genome.gff -R -O -F -E -o - | perl -i -aF'/\t/' -pe 'next if /^#/; $F[3]+=(-3500000); $F[4]+=(-3500000); $_ = join("\t", @F);'
 # gffread v0.9.12
 ##gff-version 3
 NC_007416.3	Gnomon	mRNA	196	1426	.	+	.	ID=rna543;gene_name=LOC660151;protein_id=XP_015833784.1;Dbxref=GeneID:660151,Genbank:XP_015833784.1;gbkey=CDS;product=oxysterol-binding protein-related protein 2;transcript_id=XM_015978298.1;Name=XP_015833784.1
